@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'echo "Hello, World!"'
                 sh '''
-                    echo "Multi-line"
+                    echo "Multi-line shell step. Standby for results of list(ls) utility..."
                     ls -lah
                 '''
             }
