@@ -3,7 +3,11 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python test.py'
+                sh 'echo "Hello, World!"'
+                sh '''
+                    echo "Multi-line"
+                    ls -lah
+                '''
             }
         }
     }
